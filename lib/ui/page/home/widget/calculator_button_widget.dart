@@ -25,8 +25,8 @@ class CalCulatorButton extends StatelessWidget {
         },
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 100),
-          width: MediaQuery.of(context).size.width * 0.17,
-          height: MediaQuery.of(context).size.width * 0.17,
+          width: MediaQuery.of(context).size.width * 0.15,
+          height: MediaQuery.of(context).size.width * 0.15,
           margin: const EdgeInsets.all(10),
           decoration: BoxDecoration(
             color:
