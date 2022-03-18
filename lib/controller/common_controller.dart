@@ -67,6 +67,9 @@ class CommonController extends GetxController {
         case '+/-':
           print('얘도 따로 처리');
           break;
+        case '=':
+          print('따로 처리');
+          break;
         default:
           var lastString =
               stringController.text.substring(stringController.text.length - 1);

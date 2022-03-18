@@ -1,5 +1,4 @@
 import 'package:calculator/controller/home_controller.dart';
-import 'package:calculator/ui/page/home/common/common_page.dart';
 import 'package:calculator/ui/page/home/widget/calculator_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,6 +15,7 @@ class HomePage extends GetView<HomeController> {
           children: [
             TextField(
               controller: controller.stringController,
+              keyboardType: TextInputType.none,
               minLines: 1,
               maxLines: 4,
             ),

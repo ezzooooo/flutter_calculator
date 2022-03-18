@@ -12,13 +12,23 @@ class HomeController extends GetxController {
   set appBarTitle(value) => _appBarTitle.value = value;
 
   final _result = ''.obs;
-  get result => _result.value;
+  String get result => _result.value;
   set result(value) => _result.value = value;
 
   @override
   void onInit() {
     stringController.addListener(() {
       print(stringController.text);
+
+      for (var r in stringController.text.runes) {
+        var c = String.fromCharCode(r);
+        if (c.isNumericOnly) {
+          print('숫자 : $c');
+        } else {
+          print('숫자아닌 : $c');
+        }
+      }
+
       result = stringController.text;
     });
     super.onInit();
